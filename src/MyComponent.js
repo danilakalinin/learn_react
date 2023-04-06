@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import store from './redux/store';
 
 
 function MyComponent() {
@@ -18,8 +19,8 @@ function MyComponent() {
  
   return (
     <div>
-      <div style={{fontSize:"3rem"}}>{cash}</div>
       <div style={{display:"flex"}}>
+      <div style={{fontSize:"3rem"}}>{count}</div>
         <button onClick={()=>addCount()} style={{fontSize:"3rem"}}>Add count</button>
         <button onClick={()=>getCount()} style={{fontSize:"3rem"}}>Get count</button>
       </div>  
