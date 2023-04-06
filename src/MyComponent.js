@@ -5,14 +5,14 @@ import { useDispatch, useSelector } from 'react-redux';
 function MyComponent() {
   const dispatch = useDispatch();
   const count = useSelector(state => state.count)
-  console.log(count);
+
 
   const addCount =(count) =>{
-    dispatch({type:"ADD_COUNT", countload: 1})
+    dispatch({type:"ADD_COUNT", countload: count})
   }
 
   const getCount =(count) =>{
-    dispatch({type:"GET_COUNT", countload: 1})
+    dispatch({type:"GET_COUNT", countload: count})
   }
  
   return (
