@@ -8,11 +8,11 @@ function MyComponent() {
 
 
   const addCount =(count) =>{
-    dispatch({type:"ADD_COUNT", countload: count})
+    dispatch({type:"ADD_COUNT", countload: 1})
   }
 
   const getCount =(count) =>{
-    dispatch({type:"GET_COUNT", countload: count})
+    dispatch({type:"GET_COUNT", countload: 1})
   }
  
   return (
