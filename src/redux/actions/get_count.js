@@ -1,3 +1,1 @@
-const GET_COUNT = "GET_COUNT";
-
-export default GET_COUNT
+export const GET_COUNT = "GET_COUNT";

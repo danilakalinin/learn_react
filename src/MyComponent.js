@@ -1,19 +1,17 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import store from './redux/store';
 
 
 function MyComponent() {
   const dispatch = useDispatch();
-  const cash = useSelector(state => state.cash)
   const count = useSelector(state => state.count)
   console.log(count);
 
-  const addCount =() =>{
+  const addCount =(count) =>{
     dispatch({type:"ADD_COUNT", countload: 1})
   }
 
-  const getCount =() =>{
+  const getCount =(count) =>{
     dispatch({type:"GET_COUNT", countload: 1})
   }
  
